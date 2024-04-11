@@ -24,7 +24,7 @@ public class TransferenciaController {
     @PostMapping("/transferencia")
     public ResponseEntity<TransferenciaResponseDTO> efetuarTransferencia(@RequestBody TransferenciaRequestDTO transferenciaRequestDTO)
     {
-        // implementar serviço de transferência
+        // serviço de transferência
         transferenciaService.transfer(transferenciaRequestDTO);
 
         // retornar o idTransferencia
