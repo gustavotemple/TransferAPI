@@ -1,6 +1,6 @@
 # TransferAPI
 
-## Tecnologias
+## Technologies
 
 * Java 17
 * Spring Boot
@@ -25,12 +25,16 @@ mvn test
 docker-compose up --build -d
 ```
 
-## api-transfer
+## Build & Run app
 
 ```bash
 docker build -t api-transfer .
 docker run --network="host" api-transfer
 ```
+
+## AWS draw.io
+
+[AWS-arq.drawio](AWS-arq.drawio)
 
 ## GET Mock Client
 
@@ -50,8 +54,6 @@ docker run --network="host" api-transfer
             }
   
 
-
-
 ## GET Mock Contas
 
   http://localhost:9090/contas/d0d32142-74b7-4aca-9c68-838aeacef96b
@@ -68,9 +70,7 @@ docker run --network="host" api-transfer
                 "ativo": true
                 "limiteDiario": 500.00
             }
-
-
-      
+ 
 
 ## PUT Mock Contas - Atualiza Saldo
 
@@ -91,8 +91,6 @@ docker run --network="host" api-transfer
   + Response 204 - No content (application/json)
 
 
-
-
 ## POST Mock Bacen
 
   http://localhost:9090/notificacoes
@@ -111,8 +109,6 @@ docker run --network="host" api-transfer
 
   + Response 204 - No Content (application/json)
       
-
-
 
 ## POST API Transferência
 
