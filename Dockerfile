@@ -14,7 +14,7 @@ COPY --from=build /usr/src/app/target/api-transferencia-0.0.1-SNAPSHOT.jar /app/
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "api-transferencia.jar"]
+CMD ["java", "-XX:+UseZGC", "-jar", "api-transferencia.jar"]
 
 # docker rmi --force api-transfer
 # docker build -t api-transfer .

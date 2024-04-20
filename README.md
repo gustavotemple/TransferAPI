@@ -13,6 +13,10 @@
 * Builder
 * Strategy
 
+## JVM tuning
+
+* ZGC: particularly suitable for applications where low latency and consistent response times are critical, even if the application requires a large heap size.
+
 ## Run unit tests
 
 ```bash
